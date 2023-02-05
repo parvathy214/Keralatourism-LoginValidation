@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#logo{
+    /* width:50px;
+    height: 60px; */
+    margin-left: 50px; }
+    body{
+        background-color: white;
+    }
+    .navbar{
+        background-color: rgb(8, 57, 8);
+    }
+.nav-link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /* border:1px solid white;
+     border-radius: 10px; */
+}
+.nav-item a:hover{
+    background-color: beige;
+    color:black !important;
+    transition: 1s;
+    /* display: block; */
+
+}
+.tm-content{
+    margin-left: 10px;
+}
+#foot{
+    background-color: rgb(8, 57, 8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-tertiary ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <img id="logo" src="./images/kerala-tourism-title.png" alt="logo">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item p-2">
+                <a class="nav-link active text-white " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link active text-white " aria-current="page" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link text-white " href="./signup.html">SignUp</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link text-white " href="./district.html">District</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-lg-4"></div>
+      <form class="row g-1"  onsubmit="return ValForm()" action="./welcome.html" autocomplete="off" >
+        <div class="col-md-6">
+          <label for="inputEmail4" style="color:white;">Name</label>
+          <input type="text" class="form-control" id="nam" onkeyup="return ValName()">
+          <span id="nameerror" ></span> 
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4"  style="color:white;">Phone No</label>
+          <input type="text" class="form-control" id="tel" onkeyup="return ValPhone()">
+          <span id="telerror" ></span>
+        </div><span id="telerror" ></span> <br>
+        <div class="col-12">
+          <label for="inputAddress"  style="color:white;">Address</label required>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2"  style="color:white;">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity"  style="color:white;">City</label>
+          <input type="text" class="form-control" id="inputCity" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState"  style="color:white;">State</label>
+          <select id="inputState" class="form-select " required>
+            <option selected></option>
+            <option value=""></option>     
+            <option value="">Andhra Pradesh</option>
+            <option value="">Arunachal Pradesh</option>
+            <option value="">Assam</option>
+            <option value="">Bihar</option>
+            <option value="">Chhattisgarh</option>
+            <option value="">Goa</option>
+            <option value="">Gujarat</option>
+            <option value="">Haryana</option>
+            <option value="">Himachal Pradesh</option>
+            <option value="">Jharkhand</option>
+            <option value="">Karnataka</option>
+            <option value="">Kerala</option>
+            <option value="">Madhya Pradesh</option>
+            <option value="">Maharashtra</option>
+            <option value="">Manipur</option>
+            <option value="">Meghalaya</option>
+            <option value="">Mizoram</option>
+            <option value="">Nagaland</option>
+            <option value="">Odisha</option>
+            <option value="">Punjab</option>
+            <option value="">Rajasthan</option>
+            <option value="">Sikkim</option>
+            <option value="">Tamil Nadu</option>
+            <option value="">Telengana</option>
+            <option value="">Tripura</option>
+            <option value="">Uttar Pradesh/option>
+            <option value="">Uttarakhand</option>
+            <option value="">West Bengal</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip"  style="color:white;">Zip</label>
+          <input type="text" class="form-control" id="inputZip" required>
+        </div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+      <script src="./signup.js"></script>
+
+</body>
+</html>
