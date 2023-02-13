@@ -2,7 +2,7 @@ function ValEmail(){
     let eml= document.getElementById("eml");
     let erroremail = document.getElementById("erroremail");
     let regxeml= /^([\w\.-]+)@([\w\-]+).([a-z]{2,3})(.[a-z]{2,3}?)$/;
-    if(regxeml.test(eml.value)){
+    if(regxeml.test(eml.value)==true){
         erroremail.innerHTML="valid format";
         erroremail.style.color='green';
        eml.style.border="2px solid green"
@@ -34,13 +34,13 @@ function ValPwd() {
       
     let errorpwd = document.getElementById("errorpwd");
       
-      if (strongRegex.test(pwd)) {
+      if (strongRegex.test(pwd)==true) {
         let pwd = document.getElementById("pwd");
         errorpwd.innerHTML="Strong";
                 errorpwd.style.color='green';
                pwd.style.border="2px solid green"
                 return true;
-      } else if (mediumRegex.test(pwd)) {
+      }  if (mediumRegex.test(pwd)) {
         let pwd = document.getElementById("pwd");
         errorpwd.innerHTML="Medium";
             errorpwd.style.color='orange';
@@ -92,9 +92,9 @@ function togglePassword(){
   
 
 function ValForm(){
-  if(ValEmail()){
+  if(ValCpwd()){
     if(getPasswordStrength()){
-      if(ValCpwd()){
+      if(ValEmail()){
         return true;
       }
       else{
