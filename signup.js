@@ -37,15 +37,12 @@ function ValPhone(){
   }
 }
  function ValForm(){
-      if(ValName()){
-        if(ValPhone){
-          return true
-        }
-        else{
-          return false
-        }
-        }
-        else {
-          return false;
-        }
+  if(!ValName() || !ValPhone){
+    alert("Enter Name and Phone Number");
+    return false;
+  }
+  else{
+    return true;
+  }
  }
+      
