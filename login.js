@@ -92,19 +92,10 @@ function togglePassword(){
   
 
 function ValForm(){
-  if(ValCpwd()){
-    if(getPasswordStrength()){
-      if(ValEmail()){
-        return true;
-      }
-      else{
-        return false;
-      }
-    }else{
-       return false;
+  if(!ValCpwd()|| !ValEmail() || !getPasswordStrength()){
+    alert("Please enter valid format")  
+    return false;}
+    else{
+      return true;
     }
-  
-  }else{
-    return false;
-  }
 }
