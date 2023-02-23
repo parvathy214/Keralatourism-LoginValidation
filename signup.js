@@ -37,10 +37,15 @@ function ValPhone(){
   }
 }
  function ValForm(){
-      if(!ValName() || !ValPhone()){
-        return false
-      }
-      else{
-        return true
-      }
+      if(ValName()){
+        if(ValPhone){
+          return true
+        }
+        else{
+          return false
+        }
+        }
+        else {
+          return false;
+        }
  }
