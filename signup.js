@@ -38,8 +38,8 @@ function ValPhone(){
 }
  
  function ValForm(){
-  if(!ValName() || !ValPhone){
-    alert("Enter Name and Phone Number");
+  if(!ValName() || !ValPhone()){
+   
     return false;
   }
   else{
