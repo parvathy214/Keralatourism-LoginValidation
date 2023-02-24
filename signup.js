@@ -39,7 +39,7 @@ function ValPhone(){
  
  function ValForm(){
   if(!ValName() || !ValPhone()){
-   
+   alert("Enter a valid Name and Phone Number");
     return false;
   }
   else{
